@@ -1,0 +1,97 @@
+---
+title: "Practical Purpose Using Xaringan"
+author: "Timothy Laosiri"
+institute: "Temple University"
+date: "2020/4/05 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: [tamu, tamu, tamu-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+background-image: url(https://s3.amazonaws.com/emma-assets/v28bb/5607498850f8f2f4dea21044dce943e5/header4.jpg)
+background-size: contain
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+background-size: 100px
+background-position: 90% 8%
+
+class: inverse, center, middle
+
+# Xaringan, not Sharingan!
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/905px-Temple_T_logo.svg.png)
+background-size: 100px
+background-position: 90% 90%
+class: Left
+
+## What is Xaringan?
+
+- Xaringan is a R package for creating slideshows through R Markdown. 
+--
+<br>
+<br>
+- You can use R Markdown through **RStudio** and it is easy to get started too. 
+--
+<br>
+<br>
+- All you need is go from the menu **File -> New File -> R Markdown -> From Template -> Ninja Presentation**, then you will be able to view it by pressing the **Knit** button.
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/905px-Temple_T_logo.svg.png)
+background-size: 100px
+background-position: 90% 90%
+
+class: Left
+
+# Benefits Using Xaringan
+
+- If you don't want have **Powerpoint** and don't want to use **Google Slides**, this can be a great tool for school!
+--
+<br>
+<br>
+- **IT CAN SAVE YOU TIME!!!**
+--
+<br>
+<br>
+- It's a good path to introduce you to programming!
+--
+<br>
+<br>
+- It will look good in your resume: **Proficient in RStudios**
+
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/905px-Temple_T_logo.svg.png)
+background-size: 100px
+background-position: 90% 90%
+
+class: middle, center
+
+# How could I learn more about Xaringan?
+
+[The Wiki](https://github.com/yihui/xaringan/wiki)
+--
+<br>
+<br>
+[Github](https://github.com/yihui/xaringan)
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/905px-Temple_T_logo.svg.png)
+background-size: 100px
+background-position: 90% 90%
+
+class: inverse, center, middle
+.large[**Thanks for Watching!**]
+<br>
+<br>
+Slides created via the R package xaringan.
+---

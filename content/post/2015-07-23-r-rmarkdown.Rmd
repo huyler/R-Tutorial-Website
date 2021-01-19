@@ -1,0 +1,17 @@
+---
+title: "Temple University R Tutorial and Learning Exercise (TURTLE)"
+author: "Chase Huyler"
+date: 2020-04-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown"]
+output:
+  blogdown::html_page:
+    toc: false
+runtime: shiny
+---
+
+**If you are unfamiliar with R, this is a good place to start.**
+
+<iframe height="800" width="100%" frameborder="no" src="https://chuyler.shinyapps.io/final_projcet_final/#section-lets-learn-r"> </iframe>
+
+
