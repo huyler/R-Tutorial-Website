@@ -1,0 +1,107 @@
+---
+title             : "Temple University APA Article"
+shorttitle        : "Descriptive but not Overly Wordy Title"
+
+author: 
+  - name          : "Preston Ngo"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "tug14752@temple.edu"
+  - name          : "Your Name Here"
+    affiliation   : "1"
+
+affiliation:
+  - id            : "1"
+    institution   : "Temple University"
+  - id            : "2"
+    institution   : "XYZ University"
+
+authornote: |
+  In your Psychology paper, author notes are not always required. This section includes the **complete department/insistution affiliation**, any changes in affiliation since completion of the paper, acknowledgements, and contact information. 
+  This section may be **deleted**. R is an intuitive copy-paste way to create your own documents. It looks impressive too! Keep in mind, try to maintain active voice, past tense, and restrain from using casual wording throughout your paper. Have fun!
+
+abstract: |
+  Your College-level Psychology paper's abstract is typically structured based on your professor's requirements. It may not require one at all. Typically, the abstract contains one or two sentences providing a **basic introduction** to the field. Next are two to three sentences of **more detailed background** to the field, comprehensible to your fellow college-level peers. Next is one sentence clearly stating the **general problem** being addressed by your study. Next is one sentence summarizing the main result. Next is two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge. Next is one or two sentences to put the results into a more **general context**. Finally, two or three sentences to provide a **broader perspective**, typically providing ideas for future studies.
+  keywords are effectively chosen by the author. Your paper may not require this, but good articles contain around 10-12 keywords. Keywords to choose will potentially help search engines pick up your article for readers.
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+# Introduction (2.5-3.5 pages)
+  Your introduction is the opening paragraph to your article. It should in one or two sentences introduce the **general purpose** of your study. Next in two or three sentences **address your research problem** in a relatable way to the general public. Next introduce the definitions of your constructs of interest--describe what you're measuring and why you chose to measure it for your dependent variable. Then, in one or two sentences describe in your own words the **importance of the study** that you discussed.
+  Your introduction does not end here, however. Depending on how many sources your professor requires, you will need to do a **literature review**. Each paragraph in a lit review briefly describes what researchers did and found. Next, you must provide a reason for including the reference in the first place.
+  In the next paragraph, in one or two sentences explain how your current study builds upon the existing research--state how it helps understand the problem. In one or two sentences, briefly describe **how you conducted the study** (methods). Finally, in one sentence state your **hypothesis and prediction** clearly.
+  
+# Methods (1.5-2.5 pages)
+Your Methods section describe the experiment itself. This section is separated into several parts--order is important. 
+
+## Participants
+In the first paragraph, describe the participants of your study. Describe who the participants are, how they were recruited, demographic info like gender or age, and explain any prerequisites to participating. 
+
+## Experimental Design
+This paragraph states the **experimental design** of the study--was it a within subjects design? A between subjects? In two to three sentences state the operational definitions of the **Independent variable** and **dependent variable**. State any and all control variables used, like randomization.
+
+## Material
+The Materials section states in detail descriptions of the **stimuli** used in the study in one or two sentences. Next, in one or two sentences give a detailed description of the **measurement**, making sure to include one of your references for scale, if applicable.
+
+## Procedure
+In this paragraph, in three to four sentences provide a **clear order of events** that pertain to your study. Next, provide a **description of the methods used** for each participant group. Finally, provide the 
+
+# Results
+Depending on your experiment type, you will need to calculate and gather data points. In one or two sentences explain in **plain english** the **hypothesis**, state the correct inferential test (this could be a two sided t-test etc.), and use the correct statistical language. Imagine explaining what you did to your grandmother in this section. Next, report what the test concluded in APA style including **means, standard devation of each group, and directionality**. Next in one sentence report the **control variable testing**.
+
+# Discussion
+The discussion section is essentially a **summary of the problem with results**. Restate in one or two sentences the **main purpose of the experiment**. Next in two sentences or three, write the **summary of the findings in everyday language**. Next, take as long as you want to compare results to **past literature** (use as many sources as necessary). Finally, write your **general concussions** after reviewing the literature.
+
+The next paragraph(s) should concern your limitations. In one or two sentences, write **potential critiques and confounding variables** that you reported in your findings. Next, in one or two sentences **summarize exactly what the findings are** that you are referring to. Continue writing these paragraphs depending on how many limitations you found.
+
+Finally in the last paragraph, brainstorm in one or two sentences **what future studies may want to do** to alleviate this issue. Directions to future studies must be based in logic and in the current study's results. These directions must be unique, relevant, and list all important directions... just writing "increase small sample size" is considered inadequate.
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+**Note** that references are pulled directly from your .bib file. I will show you how to update this .bib file. Go online to the source you want to cite. If there is an option, you may most likely find a BibTeX citiation option. Copy this citiation and paste it directly into your .bib file. To ensure your citation appears in the references page, copy the intext citation and place it in parentheses like so: (@R-base).
+
+# Figures
+According to APA6 guidelines, all figures must be in the page after the references. Pictures may be uploaded to RStudio or Rstudio Cloud from your personal files using the Upload option. Be sure to include your figures here using the following code:
+
+![Figure 1: Words recalled as a function of color condition](Fig1.png)
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
